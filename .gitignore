@@ -1,0 +1,12 @@
+# ignore virtual environment variables
+.DS_Store
+bin/
+lib/
+pip-selfcheck.json
+pyvenv.cfg
+# files to ignore in the application
+super_calculator/db*
+super_calculator/*/__pycache__
+super_calculator/*/migrations
+super_calculator/super_calculator/settings.py
+
