@@ -1,3 +1,30 @@
 {% extends "home/outline.html" %} {% block content %}
-<br>
-<br> {% endblock %}
+<br><br>
+<div class="card">
+    <div class="card-header">
+        <h1>Find PI to the nth number</h1>
+    </div>
+    <div class="card-body">
+        <form action="/pi-tool/" method="get" id="hidesearch">
+            <div class="row">
+                <div class="col-2">
+                    <h4><label for="get_k">Enter a Positive Integer: </label></h4>
+                </div>
+                <div class="col-2">
+                    <input class="form-control-lg" type="text" name="get_k" maxlength="6" placeholder="0...n" required />
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary btn-lg" onclick="showhide('testing')">Calculate</button>
+                </div>
+            </div>
+        </form>
+        <div class="loader" id="testing" style="display:none"></div>
+        <br><br>
+        <h5>
+            <p>
+                {{ pi }}
+            </p>
+        </h5>
+    </div>
+</div>
+{% endblock %}
