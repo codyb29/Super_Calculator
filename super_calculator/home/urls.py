@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
         path('', views.home, name='home'),
-        path('pi-tool', views.pi_tool, name='pi_tool'),
+        path('pi-tool/', views.pi_tool, name='pi_tool'),
         ]
