@@ -32,6 +32,16 @@
     border-width: 2px;
 }
 
+.in-line {
+    flex-wrap:nowrap;
+     overflow: auto;
+}
+
+#functCells {
+    min-width: 700px;
+    overflow: auto;
+}
+
 /* taken from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
 
 .loader {
@@ -64,3 +74,4 @@
         transform: rotate(360deg);
     }
 }
+
